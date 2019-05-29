@@ -1,0 +1,406 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+      font-family: 'Poiret One', cursive;
+      font-weight: bold;
+      font-size: 2rem;
+      height: 400px;
+}
+
+header h1 {
+      padding: 2rem;
+      font-family: 'Poiret One', cursive;
+      font-weight: bold;
+      font-size: 5rem;
+      text-align: center;
+}
+
+h1:hover {
+  animation-name: naam;
+  animation-duration: 5s;
+}
+@keyframes naam {
+  33% {
+    transform: translateX(30px);}
+  20% { color: white ;}
+  66% {
+    transform: translateX(-30px);}
+  80% { color: white;}
+}
+
+a {
+  text-decoration: none;
+    color: black;
+}
+nav {
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a:hover {
+  color: white;
+}
+
+header {
+  padding-bottom: 1rem;
+  background: linear-gradient(to right, #4ac29a, #bdfff3);
+}
+
+main {
+  margin: 2rem;
+}
+
+.boven {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  max-height: 60rem;
+}
+.natuur1{
+  grid-column: 1/3;
+  grid-row: 1/3;
+  max-width: 100%
+}
+.natuur{
+  grid-column: 1;
+  grid-row: 3/7;
+  max-width: 100%
+}
+
+.boven div {
+  width: 200px;
+  height: 75px;
+}
+
+ img {
+  animation-name: imga;
+  animation-duration: 4s;
+}
+
+@keyframes imga {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.blauw {background-color: #79c1e5;
+  animation-name: blauwa;
+  animation-duration: 3s;}
+.roos {background-color: #e8818c;
+  animation-name: roosa;
+  animation-duration: 3s;}
+.groen {background-color: #67db7e;
+  animation-name: groena;
+  animation-duration: 3s;}
+
+  @keyframes blauwa {
+    0% {transform: translateX(300px);}
+  }
+  @keyframes roosa {
+    0% {transform: translateX(300px);}
+    20% {transform: translateX(300px);}
+  }
+  @keyframes groena {
+    0% {transform: translateX(300px);}
+    40% {transform: translateX(300px);}
+  }
+
+.biografie1 {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 1fr;
+  grid-gap: 2rem;
+}
+
+.biografie1 h2 {
+  background-color: #79c1e5;
+  font-size: 6.6rem;
+  width: 200px;
+  height: 200px;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  margin: 0 auto;
+  grid-column: 1/3;
+}
+
+.biografie1 p {
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+p {
+  padding: 2rem 0;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+.biografie1 img {
+  max-width: 100%
+}
+.projecten1 img {
+  max-width: 100%
+}
+.projecten2 img {
+  max-width: 100%
+}
+.andere img {
+  max-width: 100%
+}
+
+
+.projecten1 {
+  margin-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 0.5fr 0.5fr 1fr;
+  grid-gap: 0.5rem;
+}
+
+.projecten1 h2 {
+  background-color: #e8818c;
+  font-size: 6.3rem;
+  width: 200px;
+  height: 200px;
+  padding: 0.5rem;
+  padding-top: 3rem;
+  margin: 2rem auto;
+  text-align: center;
+  grid-column: 1/3;
+}
+
+.projecten1 h3 {
+  font-size: 5rem;
+  border-bottom: 1.5px solid #e8818c;
+  grid-column: 1/3;
+  grid-row: 2;
+}
+
+.projectendiv {
+  grid-column: 1/3;
+  grid-row: 2;
+  }
+
+  .projecten2 {
+    margin-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
+    grid-gap: 0.5rem;
+  }
+
+  .projecten2 h2 {
+    background-color: #67db7e;
+    font-size: 6.3rem;
+    width: 200px;
+    height: 200px;
+    padding: 0.5rem;
+    padding-top: 3rem;
+    margin: 2rem auto;
+    grid-column: 1/3;
+  }
+
+  .projecten2 h3 {
+    font-size: 5rem;
+    border-bottom: 1.5px solid #67db7e;
+    grid-column: 1/3;
+    grid-row: 2;
+  }
+
+  .projectendiv2 {
+    grid-column: 1/3;
+    grid-row: 2;
+    }
+
+    .andere {
+      margin-top: 5rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 0.5fr 0.5fr 1fr;
+      grid-gap: 2rem;
+    }
+
+    .andere h2 {
+      background-color: #79c1e5;
+      font-size: 7.5rem;
+      text-align: center;
+      width: 200px;
+      height: 200px;
+      padding: 0.5rem;
+      padding-top: 3rem;
+      margin: 0 auto;
+      grid-column: 1/3;
+    }
+
+    .andere p {
+      grid-column: 1/3;
+      grid-row: 2;
+    }
+
+    .fixed {
+      position: fixed;
+      background-color: #d9fffd;
+      left: 0;
+      top: 0;
+      width: 100vw;
+}
+
+    @media (min-width: 800px) {
+      a {
+        font-size: 2.6rem;
+      }
+      .boven {
+        display: grid;
+        grid-template-columns: 1fr 0.5fr 0.3fr;
+        grid-auto-columns: 1fr 1fr 1fr;
+        grid-gap: 2rem;
+        max-height: 55rem;
+      }
+      .natuur1{
+        grid-column: 1;
+        grid-row: 1/4;
+      }
+      .natuur{
+        grid-column: 2;
+        grid-row: 1/4;
+        height: 100%;
+      }
+
+      .boven div {
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+
+      }
+
+      .biografie1 {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2rem;
+        margin: 15rem auto;
+      }
+
+      .biografie1 h2 {
+        font-size: 9rem;
+        padding-top: 6rem;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        grid-column: 1;
+      }
+
+      .biografie1 p {
+        grid-column: 1;
+        grid-row: 2;
+      }
+
+      .biografie1 img {
+        grid-row: 1/4;
+      }
+
+      .projecten1 {
+        grid-template-columns: 1fr 0.8fr 0.8fr 0.8fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 2rem;
+      }
+
+      .projecten1 h2 {
+        font-size: 9rem;
+        padding-top: 6rem;
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        grid-column: 4;
+      }
+      .projecten1 h3 {
+        text-align: center;
+      }
+
+      .projectendiv {
+        grid-column: 2/4;
+        grid-row: 1;
+        }
+
+        .projecten1 img:nth-child(6){
+          grid-row: 1/3;
+          grid-column: 1;
+        }
+
+        .projecten2 {
+          margin-top: 5rem;
+          display: grid;
+          grid-template-columns: 1fr 1fr 0.7fr 0.7fr;
+          grid-template-rows: 0.4fr 0.8fr;
+          grid-gap: 2rem;
+        }
+
+        .projecten2 h2 {
+          font-size: 9rem;
+          padding-top: 6rem;
+          width: 300px;
+          height: 300px;
+          text-align: center;
+          grid-column: 2;
+        }
+
+        .projecten2 h3 {
+          font-size: 5rem;
+          border-bottom: 1.5px solid #67db7e;
+          grid-column: 2;
+          grid-row: 2;
+        }
+
+        .projectendiv2 {
+          grid-column: 2;
+          grid-row: 2;
+          }
+
+          .projecten2 img:nth-child(4){
+            grid-row: 1/3;
+            grid-column: 1;
+
+          }
+
+          .projecten2 img:nth-child(3){
+            grid-row: 2;
+            grid-column: 3;
+            max-width: 80%;
+
+          }
+          .projecten2 img:nth-child(6){
+            grid-row: 2;
+            grid-column: 4;
+            max-width: 92%;
+          }
+
+          .projecten2 img:nth-child(5){
+            grid-row: 1;
+            grid-column: 3/5;
+          }
+
+          .andere {
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            margin-top: 15rem;
+          }
+
+          .andere h2 {
+            font-size: 11rem;
+            padding-top: 4rem;
+            width: 300px;
+            height: 300px;
+            grid-column: 1;
+          }
+
+          .andere p {
+            grid-column: 1;
+            grid-row: 2;
+          }
+
+          .andere img{
+            grid-row: 1/3;
+          }
+
+    }

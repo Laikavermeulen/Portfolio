@@ -1,0 +1,138 @@
+html {box-sizing: border-box;}
+*, *:before, *:after {box-sizing: inherit;}
+
+body {
+      font-family: 'Poiret One', cursive;
+      font-weight: bold;
+      font-size: 2rem;
+      background: linear-gradient(to top, #5befbe, white 35%);
+}
+
+header h1 {
+      padding: 2rem;
+      font-family: 'Poiret One', cursive;
+      font-weight: bold;
+      font-size: 5rem;
+      text-align: center;
+}
+
+h1:hover {
+  animation-name: naam;
+  animation-duration: 5s;
+}
+@keyframes naam {
+  33% {
+    transform: translateX(30px);}
+  20% { color: white ;}
+  66% {
+    transform: translateX(-30px);}
+  80% { color: white;}
+}
+
+a {
+  text-decoration: none;
+    color: black;
+}
+nav {
+  margin: 2rem 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav a:hover {
+  color: white;
+}
+
+header {
+  padding-bottom: 1rem;
+  background: linear-gradient(to right, #4ac29a, #bdfff3);
+}
+main {
+  margin: 0 2rem;
+}
+
+iframe {
+      margin-left: -10px;
+}
+
+  .kader {
+        margin: 1rem auto;
+        overflow: hidden;
+        width: 610px;
+        height: 420px;
+  }
+
+  img {
+    max-width: 100%;
+    margin: 2rem auto;
+  }
+
+  h3 {
+    font-size: 2.5rem;
+    padding-bottom: 0.8rem;
+    margin-top: 2rem;
+  }
+
+  p {
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+
+  .Email {
+    margin-bottom: 2rem;
+  }
+
+  .Email:hover {
+    animation-name: info;
+    animation-duration: 2s;
+  }
+
+  @keyframes info {
+    33% {
+      transform: translateX(15px);}
+    66% {
+      transform: translateX(-15px);}
+  }
+
+  .Adres:hover {
+    animation-name: info;
+    animation-duration: 2s;
+  }
+
+  .Telefoonnummer:hover {
+    animation-name: info;
+    animation-duration: 2s;
+  }
+
+
+
+@media (min-width: 800px) {
+  a {
+    font-size: 2.6rem;
+  }
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.1fr;
+  }
+
+  .kader {
+    grid-column: 2/4;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  main img {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 6rem;
+  }
+
+  .Adres, .Telefoonnummer, .Email {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+}
